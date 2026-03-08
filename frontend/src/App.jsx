@@ -4,10 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 function App() {
   return (
-    <div>
-      <h1>Event Management System</h1>
-      <p>Frontend setup successful 🚀</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<RoleSelect />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
